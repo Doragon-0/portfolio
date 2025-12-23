@@ -14,7 +14,11 @@ form.addEventListener("submit", function (e) {
     form
   )
   .then(function () {
-    alert("Message envoyé avec succès !");
+    alert("Message envoyé avec succès !")
+    .catch(function (error) {
+    alert("Erreur lors de l'envoi");
+    console.error(error);
+  });
     form.reset();
   });
 });
