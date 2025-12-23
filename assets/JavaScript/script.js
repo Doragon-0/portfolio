@@ -1,28 +1,26 @@
+// Vérification que le JS est chargé
+console.log("JS chargé");
 
+// Initialisation EmailJS
 emailjs.init("uQJgs979eals5AIOX");
 
-const form = document.getElementById("contact-form");
-const status =  document.getElementById("form-status");
+// Récupération du formulaire
+var form = document.getElementById("contact-form");
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-	e.preventDefault();
-	status.textContent = "Envoi du message";
-	status.style.color = "#333";
-	emailjs.sendForm(
-		"service_x7yq5vs",
-		"template_hv88k4a",
-		this
-		).then(() => {
-			alert("Message envoyé")
-			status.textContent ="Message envoyé avec succès ✅";
-			status.style.color = "green";
-			form.reset();
-		})
-		.catch(error) => {
-			alert("erreur : " +error.text);
-			status.textContent = "Erreur lors de l'envoi ❌";
-			status.style.color = "red";
-			console.error(error);
-		};
+  emailjs.sendForm(
+    "service_x7yq5vs",
+    "template_hv88k4a",
+    form
+  )
+  .then(function () {
+    alert("Message envoyé avec succès !");
+    form.reset();
+  })
+  .catch(function (error) {
+    alert("Erreur lors de l'envoi");
+    console.error(error);
+  });
 });
