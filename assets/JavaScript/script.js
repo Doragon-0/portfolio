@@ -3,8 +3,6 @@ console.log("JS chargé");
 
 // Initialisation EmailJS
 emailjs.init("uQJgs979eals5AIOX");
-
-// Récupération du formulaire
 var form = document.getElementById("contact-form");
 
 form.addEventListener("submit", function (e) {
