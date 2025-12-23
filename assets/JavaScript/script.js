@@ -13,11 +13,13 @@ form.addEventListener("submit", function(e){
 		"template_hv88k4a",
 		this
 		).then(() => {
+			alert("Message envoyé")
 			status.textContent ="Message envoyé avec succès ✅";
 			status.style.color = "green";
 			form.reset();
 		})
 		.catch(error) => {
+			alert("erreur : " +error.text);
 			status.textContent = "Erreur lors de l'envoi ❌";
 			status.style.color = "red";
 			console.error(error);
