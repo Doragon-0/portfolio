@@ -1,4 +1,5 @@
-emailjs.init("service_x7yq5vs");
+
+emailjs.init("uQJgs979eals5AIOX");
 
 const form = document.getElementById("contact-form");
 const status =  document.getElementById("form-status");
