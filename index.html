@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Doragon</title>
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="stylesheet" href="assets/Icons/boxicons-free/free/fonts/basic/boxicons.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+
+    <nav class="nav">
+      
+      <div class="logo">Doragon</div>
+      
+      <ul class="nav-links">
+        
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      
+      </ul>
+
+      <div class="display-mode">Doragon</div>
+    
+    </nav>
+  
+  </header>
+
+  <!-- SECTION ACCUEIL -->
+
+  <section id="home" class="section">
+
+    <div class="image-first">
+
+      <img src="assets/images/1.jpg"></img>
+
+    </div>
+    <div >
+
+      <h1>Assirdoua Daniel</h1>
+      <p>Développeur web</p>
+
+    </div>
+    
+    <div >
+ 
+      <p>Lien de contacts</p>
+
+    </div>
+
+
+  </section>
+
+  <!-- SECTION À PROPOS -->
+  <section id="about" class="section">
+
+    
+    <div class="main">
+ 
+      <div class="about-left">
+ 
+        <img src="assets/images/1.jpg"></img>
+
+      </div>
+
+      <div class="about-right">
+ 
+        <h2>À propos</h2>
+        <p>Je m'appelle Assirdoua Daniel, etudiant 2eme en génie logiciel. Je développe des applications web et j'apprends les effets visuels et le game development. Mon objectif est de créer des solutions utiles et créatives pour les entreprises et projets locaux.</p>
+
+        <div class="about-info">
+ 
+          <ul>
+            
+            <li><span>Nom:</span> Assirdoua Daniel</li>
+            <li><span>Téléphone:</span> +237 686 84 00 88</li>
+            <li><span>Expérience:</span> 2 ans</li>
+            <li><span>Age:</span> 20</li>
+            <li><span>Adresse:</span> Yaoundé, Cameroun</li>
+
+          </ul>
+
+        </div>
+
+        <div><a href="#" class="btn">Télécharger le cv</a></div>
+
+      </div>
+
+    </div>
+    
+  </section>
+
+  <!-- SECTION COMPÉTENCES -->
+  <section id="skills" class="section">
+    
+    <h2>Compétences</h2>
+    
+      <div class="skill-group">
+
+        <div class="skill-item">
+          
+          <div class="skill-icon">
+            <i class="bx bx-globe-alt"></i>
+          </div>
+
+          <div class="skill-name">
+            Développement Web
+          </div>
+
+          <div class="skill-description">
+            Je conçois des applications web modernes, rapides et structurées. Je travaille aussi bien sur le front-end que sur le back-end.
+          </div>
+
+        </div>
+
+        <div class="skill-item">
+          
+          <div class="skill-icon">
+            <i class="bx bx-magic-wand"></i>
+          </div>
+
+          <div class="skill-name">
+            VFX
+          </div>
+
+          <div class="skill-description">
+             Je crée des effets visuels pouyr le jeu vidéo et le multimédia. J'explore les shaders, particules et animations afin de donner plus de vie et d'impact visuel aux projets interactifs
+          </div>
+
+        </div>
+
+        <div class="skill-item">
+          
+          <div class="skill-icon">
+            <i class="bx bx-mobile"></i>
+          </div>
+
+          <div class="skill-name">
+            Développement mobile
+          </div>
+
+          <div class="skill-description">
+            Je développe des applications mobiles et bien structurées. Mon objectif est de proposer des applications fluides, intuitives et adaptées aux besoins réels des utilisateurs
+          </div>
+
+        </div>
+
+        <div class="skill-item">
+          
+          <div class="skill-icon">
+            <i class="bx bx-mobile"></i>
+          </div>
+
+          <div class="skill-name">
+            Développement mobile
+          </div>
+
+          <div class="skill-description">
+            Je développe des applications mobiles et bien structurées. Mon objectif est de proposer des applications fluides, intuitives et adaptées aux besoins réels des utilisateurs
+          </div>
+
+        </div>
+
+        <div class="skill-item">
+          
+          <div class="skill-icon">
+            <i class="bx bx-mobile"></i>
+          </div>
+
+          <div class="skill-name">
+            Développement mobile
+          </div>
+
+          <div class="skill-description">
+            Je développe des applications mobiles et bien structurées. Mon objectif est de proposer des applications fluides, intuitives et adaptées aux besoins réels des utilisateurs
+          </div>
+
+        </div>
+        
+      </div>
+
+  </section>
+
+  <!-- SECTION PROJETS -->
+  <section id="projects" class="section">
+    <h2>Projets</h2>
+    <div class="projects-container">
+      <!-- Exemple de projet -->
+      <div class="project-card" data-id="todo">
+        <img  alt="Todo App">
+        <h3>Todo App</h3>
+      </div>
+      <div class="project-card" data-id="portfolio">
+        <img  alt="Portfolio">
+        <h3>Portfolio Personnel</h3>
+      </div>
+      <!-- Les autres projets seront ajoutés via JS -->
+    </div>
+  </section>
+
+  <!-- MODAL POUR LES PROJETS -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <ul id="modal-tech"></ul>
+      <div id="modal-images"></div>
+      <a id="modal-github" href="#" target="_blank">Voir le projet sur GitHub</a>
+    </div>
+  </div>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="section">
+
+    <h2>Contact</h2>
+
+    <form id="contact-form">
+      <input name="name" type="text" placeholder="Nom" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Envoyer</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <!-- SCRIPT -->
+  <script src="assets/javascript/script.js"></script>
+
+</body>
+</html>
