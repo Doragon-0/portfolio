@@ -15,10 +15,10 @@ form.addEventListener("submit", function (e) {
   )
   .then(function () {
     alert("Message envoyé avec succès !")
+  })
     .catch(function (error) {
     alert("Erreur lors de l'envoi");
-    console.error(error);
-  });
+    console.error(error);;
     form.reset();
   });
 });
